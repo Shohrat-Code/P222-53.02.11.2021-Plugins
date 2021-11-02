@@ -1,0 +1,117 @@
+#counter .counterWrapper .countfect {
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  /* more styles here */
+}
+
+main #slider .owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #slider .owl-carousel .custom-slider-item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+main #slider .owl-carousel .custom-slider-item img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main #slider .owl-carousel .custom-slider-item .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+main #slider .owl-carousel .custom-slider-item .content i {
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+main #slider .owl-carousel .custom-slider-item .content p {
+  color: #242424;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+main #slider .owl-carousel .custom-slider-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+
+main #slider .owl-carousel .hovered img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main #slider .owl-carousel .hovered .content i {
+  opacity: 1;
+}
+
+main #slider .owl-carousel .hovered .content p {
+  color: #FD5A38;
+  opacity: 1;
+}
+
+main #slider .owl-carousel .hovered::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main #slider .owl-carousel .owl-nav button {
+  padding: 0px 20px !important;
+  background: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main #slider .owl-carousel .owl-nav button span {
+  font-size: 32px;
+  position: relative;
+  top: -3px;
+}
+
+main #slider .owl-carousel .owl-nav button:first-child {
+  left: 0;
+}
+
+main #slider .owl-carousel .owl-nav button:last-child {
+  right: 0;
+}
+
+main #slider .owl-carousel .owl-dots {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
